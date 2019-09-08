@@ -51,17 +51,17 @@ if($sectionStatus == 1){
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         
         // TODO: Enter your gmail and password
-        $mail->Username   = 'zkid2o2@gmail.com';                    // SMTP username
-        $mail->Password   = 'zonair12';                             // SMTP password
+        $mail->Username   = '';                                     // SMTP username
+        $mail->Password   = '';                                     // SMTP password
         
         $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
 
         //Recipients
         // TODO: Set who the email is from and reply address
-        $mail->setFrom('zkid2o2@gmail.com', 'Muhmmad Choudhary');
+        $mail->setFrom('self@example.com', 'Example');
         $mail->addAddress($email);                                  // Add a recipient
-        $mail->addReplyTo('zkid2o2@gmail.com', 'Muhmmad Choudhary');
+        $mail->addReplyTo('self@example.com', 'Example');
 
         // Content
         $mail->isHTML(true);                                        // Set email format to HTML
